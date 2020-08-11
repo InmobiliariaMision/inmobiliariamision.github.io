@@ -40,9 +40,7 @@
 a {
     color: white;
 }
-.clor {
-    width: 100%;
-}
+
 #boxer_content {
     width: 100%;
 }
@@ -66,33 +64,81 @@ a {
     text-align: center;
 }
 @media (min-width: 100px) and (max-width: 390px){
-    .clor {
-        background-color: rgb(179, 179, 179);
-        height: 250px;
+    #carouselIntro {
+        width: 100%;
+        height: 500px;
+    }
+    .carousel-item {
+        text-align: center;
+        height: 500px;
+        width: 100%;
+    }
+    #intro_img1 {
+        height: 500px;
+        width: 1092px;
     }
 }
 @media (min-width: 391px) and (max-width: 575px){
-    .clor {
-        height: 250px;
-        background-color: rgb(177, 177, 177);
+    #carouselIntro {
+        width: 100%;
+        height: 500px;
+    }
+    .carousel-item {
+        text-align: center;
+        height: 500px;
+        width: 100%;
+    }
+    #intro_img1 {
+        height: 500px;
+        width: 1092px;
     }
 }
 @media (min-width: 576px) and (max-width: 767px){
-    .clor {
-        height: 290px;
-        background-color: rgb(189, 189, 189);
+    #carouselIntro {
+        width: 100%;
+        height: 500px;
+    }
+    .carousel-item {
+        text-align: center;
+        height: 500px;
+        width: 100%;
+    }
+    #intro_img1 {
+        height: 500px;
+        width: 1092px;
     }
 }
 @media (min-width: 768px) and (max-width: 991px){
-    .clor {
-        height: 290px;
-        background-color: rgb(175, 175, 175);
+    #carouselIntro {
+        width: 100%;
+        height: 500px;
+        margin-top: 30px;
+    }
+    .carousel-item {
+        text-align: center;
+        height: 500px;
+        width: 100%;
+    }
+    #intro_img1 {
+        height: 500px;
+        width: 1092px;
     }
 }
 @media (min-width: 992px) and (max-width: 1199px){
-    .clor {
-        height: 290px;
-        background-color: rgb(175, 175, 175);
+    #carouselIntro {
+        width: 85%;
+        height: 333px;
+        margin-top: 10px;
+        margin-left: 7.5%;
+    }
+    .carousel-item {
+        text-align: center;
+        height: 333px;
+        width: 100%;
+    }
+    #intro_img1 {
+        height: 333px;
+        width: 1092px;
     }
     .boxcont {
         height: 150px;
@@ -108,9 +154,22 @@ a {
     }
 }
 @media (min-width: 1200px) and (max-width: 1599px){
-    .clor {
-        height: 300px;
-        background-color: rgb(165, 165, 165);
+    #carouselIntro {
+        width: 80%;
+        height: 333px;
+        margin-top: 10px;
+        margin-left: 10%;
+        background-color: indianred;
+    }
+    .carousel-item {
+        text-align: center;
+        height: 333px;
+        width: 100%;
+        background-color: rgb(147, 205, 92);
+    }
+    #intro_img1 {
+        height: 333px;
+        width: 1092px;
     }
     .boxcont {
         height: 150px;
@@ -126,9 +185,20 @@ a {
     }
 }
 @media (min-width: 1600px) and (max-width: 1999px){
-    .clor {
-        height: 450px;
-        background-color: rgb(194, 194, 194);
+    #carouselIntro {
+        width: 87%;
+        height: 500px;
+        margin-top: 50px;
+        margin-left: 6.5%;
+    }
+    .carousel-item {
+        text-align: center;
+        height: 500px;
+        width: 100%;
+    }
+    #intro_img1 {
+        height: 500px;
+        width: 1638px;
     }
     #boxer_content {
         position: relative;
