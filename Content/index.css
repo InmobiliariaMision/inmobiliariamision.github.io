@@ -6,6 +6,9 @@
     height: 100px;
     width: 200px;
 }
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7);
+}
 .navbar-brand {
     margin-left: 50px!important;
 }
@@ -20,6 +23,7 @@
 .nav-link {
     padding-left: 35px!important;
     padding-right: 35px!important;
+    color: white!important;
 }
 @media (min-width: 100px) and (max-width: 390px){
     .navbar-brand {
@@ -40,29 +44,32 @@
 a {
     color: white;
 }
-
-#boxer_content {
-    width: 100%;
-}
-#boxer_content {
-    height: 220px;
+.spanColor {
+    color: white;
     position: relative;
-    top: 20px;
-    text-align: center;
-    margin-bottom: 10%;
+    top: 97px;
 }
-.boxcont {
-    height: 100px;
-    width: 48%;
-    float: left;
-    background-color: rgb(177, 177, 177);
-    margin-left: 1%;
+#box1 {
+    background-image: url(./images/types/terrenos_chacras.png);
+    background-position: center;
+    background-size: cover;
 }
-.boxes {
-    height: 110px;
-    width: 100%;
-    text-align: center;
+#box2 {
+    background-image: url(./images/types/casas.png);
+    background-position: center;
+    background-size: cover;
 }
+#box3 {
+    background-image: url(./images/types/departamentos.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#box4 {
+    background-image: url(./images/types/locales_comerciales.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
 @media (min-width: 100px) and (max-width: 390px){
     #carouselIntro {
         width: 100%;
@@ -76,6 +83,33 @@ a {
     #intro_img1 {
         height: 500px;
         width: 1092px;
+    }
+    #boxer_content {
+        height: 850px;
+        width: 100%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .boxes {
+        height: 350px;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .boxcont {
+        height: 157px;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 25px;
+        float: left;
+        text-align: center;
+    }
+    .text_property {
+        height: 157px;
+        position: relative;
+        font-size: 15px;
+        width: 100%;
+        background-color: rgb(0, 0, 0, 0.3);
     }
 }
 @media (min-width: 391px) and (max-width: 575px){
@@ -92,6 +126,33 @@ a {
         height: 500px;
         width: 1092px;
     }
+    #boxer_content {
+        height: 850px;
+        width: 100%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .boxes {
+        height: 350px;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .boxcont {
+        height: 157px;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 25px;
+        float: left;
+        text-align: center;
+    }
+    .text_property {
+        height: 157px;
+        position: relative;
+        font-size: 15px;
+        width: 100%;
+        background-color: rgb(0, 0, 0, 0.3);
+    }
 }
 @media (min-width: 576px) and (max-width: 767px){
     #carouselIntro {
@@ -106,6 +167,33 @@ a {
     #intro_img1 {
         height: 500px;
         width: 1092px;
+    }
+    #boxer_content {
+        height: 850px;
+        width: 100%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .boxes {
+        height: 350px;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .boxcont {
+        height: 157px;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 25px;
+        float: left;
+        text-align: center;
+    }
+    .text_property {
+        height: 157px;
+        position: relative;
+        font-size: 15px;
+        width: 100%;
+        background-color: rgb(0, 0, 0, 0.3);
     }
 }
 @media (min-width: 768px) and (max-width: 991px){
@@ -122,6 +210,33 @@ a {
     #intro_img1 {
         height: 500px;
         width: 1092px;
+    }
+    #boxer_content {
+        height: 850px;
+        width: 100%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .boxes {
+        height: 350px;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .boxcont {
+        height: 157px;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 25px;
+        float: left;
+        text-align: center;
+    }
+    .text_property {
+        height: 157px;
+        position: relative;
+        font-size: 15px;
+        width: 100%;
+        background-color: rgb(0, 0, 0, 0.3);
     }
 }
 @media (min-width: 992px) and (max-width: 1199px){
@@ -152,6 +267,33 @@ a {
         width: 50%;
         float: left;
     }
+    #boxer_content {
+        height: 850px;
+        width: 100%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .boxes {
+        height: 350px;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .boxcont {
+        height: 157px;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 25px;
+        float: left;
+        text-align: center;
+    }
+    .text_property {
+        height: 157px;
+        position: relative;
+        font-size: 15px;
+        width: 100%;
+        background-color: rgb(0, 0, 0, 0.3);
+    }
 }
 @media (min-width: 1200px) and (max-width: 1599px){
     #carouselIntro {
@@ -171,20 +313,38 @@ a {
         height: 333px;
         width: 1092px;
     }
-    .boxcont {
-        height: 150px;
-        width: 40%;
-        float: left;
-        background-color: rgb(185, 185, 185);
-        margin-left: 6.5%;
+    #boxer_content {
+        height: 850px;
+        width: 100%;
+        margin-top: 5%;
+        margin-bottom: 5%;
     }
     .boxes {
-        height: 150px;
-        width: 50%;
+        height: 350px;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .boxcont {
+        height: 157px;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 25px;
         float: left;
+        text-align: center;
+    }
+    .text_property {
+        height: 157px;
+        position: relative;
+        font-size: 15px;
+        width: 100%;
+        background-color: rgb(0, 0, 0, 0.3);
     }
 }
 @media (min-width: 1600px) and (max-width: 1999px){
+    .nav-link {
+        font-size: 20px;
+    }
     #carouselIntro {
         width: 87%;
         height: 500px;
@@ -204,17 +364,68 @@ a {
         position: relative;
         top: 50px;
     }
-    .boxcont {
-        height: 200px;
-        width: 45%;
+    #boxer_content {
+        height: 500px;
+        width: 100%;
+        margin-bottom: 5%;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    #box_cont_text {
+        width: 40%;
+        height: 500px;
         float: left;
-        background-color: rgb(153, 153, 153);
-        margin-left: 3.5%;
+    }
+    #title_links {
+        color: white;
+        width: 80%;
+        padding: 20px;
+        margin-left: 10%;
+        position: relative;
+        top: 100px;
+        font-size: 45px;
+        font-weight: bolder;
+    }
+    #text_links {
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        background-color: rgb(5, 151, 115);
+        position: relative;
+        top: 105px;
+        padding-left: 25px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        left: 13%;
+        width: 65%;
+    }
+    #box_cont_links {
+        width: 60%;
+        height: 500px;
+        float: left;
+        background-color: rgb(211, 211, 211);
     }
     .boxes {
-        height: 200px;
-        width: 50%;
+        height: 225px;
+        width: 90%;
+        position: relative;
+        top: 27px;
+        margin-left: 10%;
+    }
+    .boxcont {
+        height: 207px;
+        width: 35%;
+        position: relative;
+        margin-left: 10%;
+        margin-bottom: 25px;
         float: left;
+        text-align: center;
+    }
+    .text_property {
+        height: 207px;
+        position: relative;
+        font-size: 23px;
+        width: 100%;
+        background-color: rgb(0, 0, 0, 0.3);
     }
 }
 #Foot_Content {
