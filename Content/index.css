@@ -44,11 +44,7 @@
 a {
     color: white;
 }
-.spanColor {
-    color: white;
-    position: relative;
-    top: 97px;
-}
+
 #box1 {
     background-image: url(./images/types/terrenos_chacras.png);
     background-position: center;
@@ -69,8 +65,15 @@ a {
     background-position: center;
     background-size: cover;
 }
-
+.spanColor {
+    color: white;
+    position: relative;
+    top: 97px;
+}
 @media (min-width: 100px) and (max-width: 390px){
+    /*---==============================================-->
+    <!---=========== FLUJO DE PRESENTACION ============-->
+    <!---==============================================--*/
     #carouselIntro {
         width: 100%;
         height: 500px;
@@ -84,32 +87,124 @@ a {
         height: 500px;
         width: 1092px;
     }
+    /*---==============================================-->
+    <!---================= CONTENIDO 1 ================-->
+    <!---==============================================--*/
     #boxer_content {
-        height: 850px;
+        position: relative;
+        top: 50px;
+    }
+    #boxer_content {
+        height: 1300px;
         width: 100%;
-        margin-top: 5%;
-        margin-bottom: 5%;
+        margin-bottom: 100px;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    #box_cont_text {
+        width: 100%;
+        height: 250px;
+    }
+    #title_links {
+        color: white;
+        width: 90%;
+        padding: 20px;
+        margin-left: 5%;
+        position: relative;
+        top: 40px;
+        font-size: 25px;
+        font-weight: bolder;
+    }
+    #text_links {
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: rgb(5, 151, 115);
+        position: relative;
+        top: 55px;
+        left: 5%;
+        padding-left: 25px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 90%;
+    }
+    #box_cont_links {
+        position: relative;
+        width: 100%;
+        height: 1000px;
+        background-color: rgb(211, 211, 211);
     }
     .boxes {
-        height: 350px;
+        height: 450px;
         width: 100%;
-        margin-bottom: 15px;
+        position: relative;
+        top: 40px;
     }
     .boxcont {
-        height: 157px;
-        width: 80%;
-        margin-left: 10%;
-        margin-right: 10%;
-        margin-bottom: 25px;
-        float: left;
+        height: 187px;
+        width: 100%;
+        margin-top: 50px;
         text-align: center;
     }
     .text_property {
-        height: 157px;
+        height: 187px;
         position: relative;
-        font-size: 15px;
+        font-size: 24px;
         width: 100%;
         background-color: rgb(0, 0, 0, 0.3);
+    }
+    .spanColor {
+        position: relative;
+        top: 72px;
+    }
+    /*---==============================================-->
+    <!---================= CONTENIDO 4 ================-->
+    <!---==============================================--*/
+    .foot-content {
+        height: 950px;
+        width: 100%;
+        margin-bottom: 100px;
+    }
+    .boxs-contact {
+        position: relative;
+    }
+    .group-contact {
+        height: 150px;
+        width: 100%;
+        margin-top: 15px;
+    }
+    .icon-contact {
+        width: 30%;
+        height: 150px;
+        float: left;
+    }
+    .icon-contact-img {
+        position: relative;
+        left: 34.5px;
+        top: 15px;
+    }
+    .data-contact {
+        width: 70%;
+        height: 150px;
+        float: left;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    .title-contact {
+        font-size: 22px;
+        padding: 12px;
+        margin: 0px!important;
+    }
+    .text-contact {
+        width: 100%;
+        height: 100px;
+    }
+
+
+    .info-contact {
+        width: 100%;
+        height: 400px;
+        margin-top: 50px;
+        background-color: gray;
     }
 }
 @media (min-width: 391px) and (max-width: 575px){
@@ -127,31 +222,71 @@ a {
         width: 1092px;
     }
     #boxer_content {
-        height: 850px;
+        position: relative;
+        top: 50px;
+    }
+    #boxer_content {
+        height: 1300px;
         width: 100%;
-        margin-top: 5%;
-        margin-bottom: 5%;
+        margin-bottom: 15%;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    #box_cont_text {
+        width: 100%;
+        height: 250px;
+    }
+    #title_links {
+        color: white;
+        width: 90%;
+        padding: 20px;
+        margin-left: 5%;
+        position: relative;
+        top: 40px;
+        font-size: 25px;
+        font-weight: bolder;
+    }
+    #text_links {
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: rgb(5, 151, 115);
+        position: relative;
+        top: 55px;
+        left: 5%;
+        padding-left: 25px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 90%;
+    }
+    #box_cont_links {
+        position: relative;
+        width: 100%;
+        height: 1000px;
+        background-color: rgb(211, 211, 211);
     }
     .boxes {
-        height: 350px;
+        height: 450px;
         width: 100%;
-        margin-bottom: 15px;
+        position: relative;
+        top: 40px;
+        margin-bottom: 5%;
     }
     .boxcont {
-        height: 157px;
-        width: 80%;
-        margin-left: 10%;
-        margin-right: 10%;
-        margin-bottom: 25px;
-        float: left;
+        height: 187px;
+        width: 100%;
+        margin-top: 50px;
         text-align: center;
     }
     .text_property {
-        height: 157px;
+        height: 187px;
         position: relative;
-        font-size: 15px;
+        font-size: 24px;
         width: 100%;
         background-color: rgb(0, 0, 0, 0.3);
+    }
+    .spanColor {
+        position: relative;
+        top: 72px;
     }
 }
 @media (min-width: 576px) and (max-width: 767px){
@@ -169,31 +304,73 @@ a {
         width: 1092px;
     }
     #boxer_content {
-        height: 850px;
+        position: relative;
+        top: 50px;
+    }
+    #boxer_content {
+        height: 1350px;
         width: 100%;
-        margin-top: 5%;
-        margin-bottom: 5%;
+        margin-bottom: 10%;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    #box_cont_text {
+        width: 100%;
+        height: 300px;
+    }
+    #title_links {
+        color: white;
+        width: 90%;
+        padding: 20px;
+        margin-left: 5%;
+        position: relative;
+        top: 40px;
+        font-size: 25px;
+        font-weight: bolder;
+    }
+    #text_links {
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        background-color: rgb(5, 151, 115);
+        position: relative;
+        top: 55px;
+        padding-left: 25px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        left: 12%;
+        width: 75%;
+    }
+    #box_cont_links {
+        position: relative;
+        width: 100%;
+        height: 1000px;
+        background-color: rgb(211, 211, 211);
     }
     .boxes {
-        height: 350px;
-        width: 100%;
-        margin-bottom: 15px;
+        height: 450px;
+        width: 95%;
+        position: relative;
+        top: 40px;
+        margin-bottom: 5%;
+        margin-left: 2.5%;
     }
     .boxcont {
-        height: 157px;
-        width: 80%;
-        margin-left: 10%;
-        margin-right: 10%;
-        margin-bottom: 25px;
-        float: left;
+        height: 187px;
+        width: 70%;
+        margin-left: 15%;
+        margin-top: 50px;
         text-align: center;
     }
     .text_property {
-        height: 157px;
+        height: 187px;
         position: relative;
-        font-size: 15px;
+        font-size: 24px;
         width: 100%;
         background-color: rgb(0, 0, 0, 0.3);
+    }
+    .spanColor {
+        position: relative;
+        top: 72px;
     }
 }
 @media (min-width: 768px) and (max-width: 991px){
@@ -212,31 +389,73 @@ a {
         width: 1092px;
     }
     #boxer_content {
-        height: 850px;
+        position: relative;
+        top: 50px;
+    }
+    #boxer_content {
+        height: 800px;
         width: 100%;
-        margin-top: 5%;
-        margin-bottom: 5%;
+        margin-bottom: 10%;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    #box_cont_text {
+        width: 100%;
+        height: 300px;
+    }
+    #title_links {
+        color: white;
+        width: 85%;
+        padding: 20px;
+        margin-left: 10%;
+        position: relative;
+        top: 50px;
+        font-size: 30px;
+        font-weight: bolder;
+    }
+    #text_links {
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        background-color: rgb(5, 151, 115);
+        position: relative;
+        top: 55px;
+        padding-left: 25px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        left: 12%;
+        width: 75%;
+    }
+    #box_cont_links {
+        position: relative;
+        width: 100%;
+        height: 500px;
+        background-color: rgb(211, 211, 211);
     }
     .boxes {
-        height: 350px;
-        width: 100%;
-        margin-bottom: 15px;
+        height: 167px;
+        width: 95%;
+        position: relative;
+        top: 65px;
+        margin-bottom: 5%;
+        margin-left: 2.5%;
     }
     .boxcont {
-        height: 157px;
-        width: 80%;
+        height: 167px;
+        width: 35%;
         margin-left: 10%;
-        margin-right: 10%;
-        margin-bottom: 25px;
         float: left;
         text-align: center;
     }
     .text_property {
-        height: 157px;
+        height: 167px;
         position: relative;
-        font-size: 15px;
+        font-size: 20px;
         width: 100%;
         background-color: rgb(0, 0, 0, 0.3);
+    }
+    .spanColor {
+        position: relative;
+        top: 72px;
     }
 }
 @media (min-width: 992px) and (max-width: 1199px){
@@ -255,44 +474,74 @@ a {
         height: 333px;
         width: 1092px;
     }
-    .boxcont {
-        height: 150px;
-        width: 40%;
-        float: left;
-        background-color: rgb(199, 199, 199);
-        margin-left: 6.5%;
-    }
-    .boxes {
-        height: 150px;
-        width: 50%;
-        float: left;
+    #boxer_content {
+        position: relative;
+        top: 50px;
     }
     #boxer_content {
-        height: 850px;
+        height: 500px;
         width: 100%;
-        margin-top: 5%;
-        margin-bottom: 5%;
+        margin-bottom: 10%;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    #box_cont_text {
+        width: 40%;
+        height: 500px;
+        float: left;
+    }
+    #title_links {
+        color: white;
+        width: 85%;
+        padding: 20px;
+        margin-left: 7%;
+        position: relative;
+        top: 100px;
+        font-size: 30px;
+        font-weight: bolder;
+    }
+    #text_links {
+        color: white;
+        font-size: 19px;
+        font-weight: bold;
+        background-color: rgb(5, 151, 115);
+        position: relative;
+        top: 105px;
+        padding-left: 25px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        left: 12%;
+        width: 75%;
+    }
+    #box_cont_links {
+        width: 60%;
+        height: 500px;
+        float: left;
+        background-color: rgb(211, 211, 211);
     }
     .boxes {
-        height: 350px;
-        width: 100%;
-        margin-bottom: 15px;
+        height: 167px;
+        width: 95%;
+        margin-left: 3%;
+        margin-top: 50px;
     }
     .boxcont {
-        height: 157px;
-        width: 80%;
-        margin-left: 10%;
-        margin-right: 10%;
-        margin-bottom: 25px;
+        height: 167px;
+        width: 45%;
+        position: relative;
+        margin-left: 3.5%;
         float: left;
         text-align: center;
     }
     .text_property {
-        height: 157px;
+        height: 167px;
         position: relative;
-        font-size: 15px;
+        font-size: 23px;
         width: 100%;
         background-color: rgb(0, 0, 0, 0.3);
+    }
+    .spanColor {
+        position: relative;
+        top: 72px;
     }
 }
 @media (min-width: 1200px) and (max-width: 1599px){
@@ -314,29 +563,69 @@ a {
         width: 1092px;
     }
     #boxer_content {
-        height: 850px;
+        position: relative;
+        top: 50px;
+    }
+    #boxer_content {
+        height: 500px;
         width: 100%;
-        margin-top: 5%;
         margin-bottom: 5%;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    #box_cont_text {
+        width: 40%;
+        height: 500px;
+        float: left;
+    }
+    #title_links {
+        color: white;
+        width: 80%;
+        padding: 20px;
+        margin-left: 10%;
+        position: relative;
+        top: 100px;
+        font-size: 35px;
+        font-weight: bolder;
+    }
+    #text_links {
+        color: white;
+        font-size: 22px;
+        font-weight: bold;
+        background-color: rgb(5, 151, 115);
+        position: relative;
+        top: 105px;
+        padding-left: 25px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        left: 13%;
+        width: 75%;
+    }
+    #box_cont_links {
+        width: 60%;
+        height: 500px;
+        float: left;
+        background-color: rgb(211, 211, 211);
     }
     .boxes {
-        height: 350px;
-        width: 100%;
-        margin-bottom: 15px;
+        height: 225px;
+        width: 95%;
+        position: relative;
+        top: 27px;
+        margin-left: 3%;
     }
     .boxcont {
-        height: 157px;
-        width: 80%;
-        margin-left: 10%;
-        margin-right: 10%;
+        height: 207px;
+        width: 45%;
+        position: relative;
+        margin-left: 4%;
         margin-bottom: 25px;
         float: left;
         text-align: center;
     }
     .text_property {
-        height: 157px;
+        height: 207px;
         position: relative;
-        font-size: 15px;
+        font-size: 23px;
         width: 100%;
         background-color: rgb(0, 0, 0, 0.3);
     }
@@ -428,12 +717,7 @@ a {
         background-color: rgb(0, 0, 0, 0.3);
     }
 }
-#Foot_Content {
-    height: 500px;
-    width: 100%;
-    background-color: gray;
-    margin-bottom: 5%;
-}
+
 /*=========================*/
 
 /*========================================================*/
