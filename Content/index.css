@@ -1,3 +1,9 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
 /*========================================================*/
 /*======================= HEADER =========================*/
 /*========================================================*/
@@ -85,7 +91,7 @@ a {
     }
     #intro_img1 {
         height: 500px;
-        width: 1092px;
+        width: auto;
     }
     /*---==============================================-->
     <!---================= CONTENIDO 1 ================-->
@@ -148,13 +154,13 @@ a {
     .text_property {
         height: 187px;
         position: relative;
-        font-size: 24px;
         width: 100%;
         background-color: rgb(0, 0, 0, 0.3);
     }
     .spanColor {
         position: relative;
         top: 72px;
+        font-size: 20px;
     }
     /*---==============================================-->
     <!---================= CONTENIDO 4 ================-->
@@ -173,17 +179,20 @@ a {
         margin-top: 15px;
     }
     .icon-contact {
-        width: 30%;
+        width: 25%;
         height: 150px;
         float: left;
+        text-align: right;
     }
     .icon-contact-img {
         position: relative;
-        left: 34.5px;
-        top: 15px;
+    }
+    .fa-map-marker-alt, .fa-phone-alt, .fa-envelope-open-text {
+        top: 59px;
+        right: 20px;
     }
     .data-contact {
-        width: 70%;
+        width: 75%;
         height: 150px;
         float: left;
         text-align: center;
@@ -191,15 +200,14 @@ a {
     }
     .title-contact {
         font-size: 22px;
-        padding: 12px;
         margin: 0px!important;
+        padding-top: 40px;
+        padding-bottom: 15px;
     }
     .text-contact {
         width: 100%;
-        height: 100px;
+        height: 50px;
     }
-
-
     .info-contact {
         width: 100%;
         height: 400px;
@@ -208,6 +216,9 @@ a {
     }
 }
 @media (min-width: 391px) and (max-width: 575px){
+    /*---==============================================-->
+    <!---=========== FLUJO DE PRESENTACION ============-->
+    <!---==============================================--*/
     #carouselIntro {
         width: 100%;
         height: 500px;
@@ -219,8 +230,12 @@ a {
     }
     #intro_img1 {
         height: 500px;
-        width: 1092px;
+        width: auto;
     }
+
+    /*---==============================================-->
+    <!---================= CONTENIDO 1 ================-->
+    <!---==============================================--*/
     #boxer_content {
         position: relative;
         top: 50px;
@@ -288,21 +303,82 @@ a {
         position: relative;
         top: 72px;
     }
+
+    /*---==============================================-->
+    <!---================= CONTENIDO 4 ================-->
+    <!---==============================================--*/
+    .foot-content {
+        height: 950px;
+        width: 100%;
+        margin-bottom: 100px;
+    }
+    .boxs-contact {
+        position: relative;
+    }
+    .group-contact {
+        height: 150px;
+        width: 100%;
+        margin-top: 15px;
+    }
+    .icon-contact {
+        width: 25%;
+        height: 150px;
+        float: left;
+        text-align: right;
+    }
+    .icon-contact-img {
+        position: relative;
+    }
+    .fa-map-marker-alt, .fa-phone-alt, .fa-envelope-open-text {
+        top: 59px;
+    }
+    .data-contact {
+        width: 75%;
+        height: 150px;
+        float: left;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    .title-contact {
+        font-size: 22px;
+        margin: 0px!important;
+        padding-top: 40px;
+        padding-bottom: 15px;
+    }
+    .text-contact {
+        width: 100%;
+        height: 50px;
+    }
+    .info-contact {
+        width: 100%;
+        height: 400px;
+        margin-top: 50px;
+        background-color: gray;
+    }
+    
 }
 @media (min-width: 576px) and (max-width: 767px){
+    /*---==============================================-->
+    <!---=========== FLUJO DE PRESENTACION ============-->
+    <!---==============================================--*/
     #carouselIntro {
         width: 100%;
-        height: 500px;
+        height: auto;
     }
     .carousel-item {
         text-align: center;
-        height: 500px;
+        height: auto;
         width: 100%;
     }
     #intro_img1 {
         height: 500px;
-        width: 1092px;
+        width: auto;
     }
+
+
+    /*---==============================================-->
+    <!---================= CONTENIDO 1 ================-->
+    <!---==============================================--*/
     #boxer_content {
         position: relative;
         top: 50px;
@@ -372,25 +448,87 @@ a {
         position: relative;
         top: 72px;
     }
+    /*---==============================================-->
+    <!---================= CONTENIDO 4 ================-->
+    <!---==============================================--*/
+    .foot-content {
+        height: 1050px;
+        width: 100%;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    .boxs-contact {
+        position: relative;
+    }
+    .group-contact {
+        height: 150px;
+        width: 100%;
+        margin-top: 15px;
+    }
+    .icon-contact {
+        width: 25%;
+        height: 150px;
+        float: left;
+        text-align: right;
+    }
+    .icon-contact-img {
+        position: relative;
+    }
+    .fa-map-marker-alt, .fa-phone-alt, .fa-envelope-open-text {
+        top: 59px;
+    }
+    .data-contact {
+        width: 75%;
+        height: 150px;
+        float: left;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    .title-contact {
+        font-size: 22px;
+        margin: 0px!important;
+        padding-top: 40px;
+        padding-bottom: 15px;
+    }
+    .text-contact {
+        width: 100%;
+        height: 50px;
+    }
+    .info-contact {
+        width: 100%;
+        height: 400px;
+        margin-top: 50px;
+        background-color: gray;
+    }
 }
 @media (min-width: 768px) and (max-width: 991px){
+    /*---==============================================-->
+    <!---=========== FLUJO DE PRESENTACION ============-->
+    <!---==============================================--*/
     #carouselIntro {
         width: 100%;
-        height: 500px;
-        margin-top: 30px;
+        height: auto;
     }
     .carousel-item {
         text-align: center;
-        height: 500px;
+        height: auto;
         width: 100%;
     }
-    #intro_img1 {
-        height: 500px;
-        width: 1092px;
+    .img-boxcarousel {
+        height: auto;
+        width: 100%;
     }
+    .intro_img {
+        height: auto;
+        width: auto;
+    }
+    /*---==============================================-->
+    <!---================= CONTENIDO 1 ================-->
+    <!---==============================================--*/
     #boxer_content {
         position: relative;
         top: 50px;
+        margin-top: 10px;
     }
     #boxer_content {
         height: 800px;
@@ -457,23 +595,92 @@ a {
         position: relative;
         top: 72px;
     }
+    /*---==============================================-->
+    <!---================= CONTENIDO 4 ================-->
+    <!---==============================================--*/
+    .foot-content {
+        height: 1050px;
+        width: 100%;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    .boxs-contact {
+        position: relative;
+        height: 350px;
+        width: 100%;
+    }
+    .group-contact {
+        height: 150px;
+        margin-top: 15px;
+        float: left;
+    }
+    .contact-1, .contact-2 {
+        width: 50%;
+    }
+    .contact-3 {
+        width: 50%;
+        margin-left: 25%;
+    }
+    .icon-contact {
+        width: 25%;
+        height: 150px;
+        float: left;
+        text-align: right;
+    }
+    .icon-contact-img {
+        position: relative;
+    }
+    .fa-map-marker-alt, .fa-phone-alt, .fa-envelope-open-text {
+        top: 59px;
+    }
+    .data-contact {
+        width: 75%;
+        height: 150px;
+        float: left;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    .title-contact {
+        font-size: 22px;
+        margin: 0px!important;
+        padding-top: 40px;
+        padding-bottom: 15px;
+    }
+    .text-contact {
+        width: 100%;
+        height: 50px;
+    }
+    .info-contact {
+        width: 100%;
+        height: 400px;
+        margin-top: 50px;
+        background-color: gray;
+    }
 }
 @media (min-width: 992px) and (max-width: 1199px){
+    /*---==============================================-->
+    <!---=========== FLUJO DE PRESENTACION ============-->
+    <!---==============================================--*/
     #carouselIntro {
-        width: 85%;
-        height: 333px;
-        margin-top: 10px;
-        margin-left: 7.5%;
+        width: 100%;
+        height: auto;
     }
     .carousel-item {
         text-align: center;
-        height: 333px;
+        height: auto;
+        width: 100%;
+    }
+    .img-boxcarousel {
+        height: auto;
         width: 100%;
     }
     #intro_img1 {
-        height: 333px;
-        width: 1092px;
+        height: auto;
+        width: 100%;
     }
+    /*---==============================================-->
+    <!---================= CONTENIDO 1 ================-->
+    <!---==============================================--*/
     #boxer_content {
         position: relative;
         top: 50px;
@@ -543,25 +750,95 @@ a {
         position: relative;
         top: 72px;
     }
+    /*---==============================================-->
+    <!---================= CONTENIDO 4 ================-->
+    <!---==============================================--*/
+    .foot-content {
+        height: 1050px;
+        width: 100%;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    .boxs-contact {
+        position: relative;
+        height: 350px;
+        width: 100%;
+    }
+    .group-contact {
+        height: 150px;
+        margin-top: 15px;
+        float: left;
+    }
+    .contact-1, .contact-2 {
+        width: 50%;
+    }
+    .contact-3 {
+        width: 50%;
+        margin-left: 25%;
+    }
+    .icon-contact {
+        width: 25%;
+        height: 150px;
+        float: left;
+        text-align: right;
+    }
+    .icon-contact-img {
+        position: relative;
+    }
+    .fa-map-marker-alt, .fa-phone-alt, .fa-envelope-open-text {
+        top: 59px;
+    }
+    .data-contact {
+        width: 75%;
+        height: 150px;
+        float: left;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    .title-contact {
+        font-size: 22px;
+        margin: 0px!important;
+        padding-top: 40px;
+        padding-bottom: 15px;
+    }
+    .text-contact {
+        width: 100%;
+        height: 50px;
+    }
+    .info-contact {
+        width: 100%;
+        height: 400px;
+        margin-top: 50px;
+        background-color: gray;
+    }
 }
 @media (min-width: 1200px) and (max-width: 1599px){
+    /*---==============================================-->
+    <!---=========== FLUJO DE PRESENTACION ============-->
+    <!---==============================================--*/
     #carouselIntro {
-        width: 80%;
-        height: 333px;
-        margin-top: 10px;
-        margin-left: 10%;
-        background-color: indianred;
+        width: 100%;
+        height: auto;
+    }
+    .img-boxcarousel {
+        height: auto;
+        width: 100%;
+    }
+    .carousel-control-prev, .carousel-control-next {
+        width: 150px;
     }
     .carousel-item {
         text-align: center;
-        height: 333px;
+        height: auto;
         width: 100%;
-        background-color: rgb(147, 205, 92);
     }
     #intro_img1 {
-        height: 333px;
-        width: 1092px;
+        height: auto;
+        width: 100%;
     }
+    /*---==============================================-->
+    <!---================= CONTENIDO 1 ================-->
+    <!---==============================================--*/
     #boxer_content {
         position: relative;
         top: 50px;
@@ -629,26 +906,93 @@ a {
         width: 100%;
         background-color: rgb(0, 0, 0, 0.3);
     }
+    /*---==============================================-->
+    <!---================= CONTENIDO 4 ================-->
+    <!---==============================================--*/
+    .foot-content {
+        height: 850px;
+        width: 100%;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    .boxs-contact {
+        position: relative;
+        height: 200px;
+        width: 100%;
+    }
+    .group-contact {
+        height: 180px;
+        width: 33.3%;
+        margin-top: 15px;
+        float: left;
+    }
+    .icon-contact {
+        width: 25%;
+        height: 150px;
+        float: left;
+        text-align: right;
+    }
+    .icon-contact-img {
+        position: relative;
+    }
+    .fa-map-marker-alt, .fa-phone-alt, .fa-envelope-open-text {
+        top: 59px;
+    }
+    .data-contact {
+        width: 75%;
+        height: 150px;
+        float: left;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    .title-contact {
+        font-size: 25px;
+        margin: 0px!important;
+        padding-top: 40px;
+        padding-bottom: 15px;
+    }
+    .text-contact {
+        width: 100%;
+        height: 50px;
+        font-size: 17px;
+    }
+    .info-contact {
+        width: 100%;
+        height: 400px;
+        margin-top: 50px;
+        background-color: gray;
+    }
 }
 @media (min-width: 1600px) and (max-width: 1999px){
+    /*---==============================================-->
+    <!---=========== FLUJO DE PRESENTACION ============-->
+    <!---==============================================--*/
     .nav-link {
         font-size: 20px;
     }
     #carouselIntro {
-        width: 87%;
-        height: 500px;
-        margin-top: 50px;
-        margin-left: 6.5%;
+        width: 100%;
+        height: auto;
+    }
+    .img-boxcarousel {
+        height: auto;
+        width: 100%;
+    }
+    .carousel-control-prev, .carousel-control-next {
+        width: 150px;
     }
     .carousel-item {
         text-align: center;
-        height: 500px;
+        height: auto;
         width: 100%;
     }
     #intro_img1 {
-        height: 500px;
-        width: 1638px;
+        height: auto;
+        width: 100%;
     }
+    /*---==============================================-->
+    <!---================= CONTENIDO 1 ================-->
+    <!---==============================================--*/
     #boxer_content {
         position: relative;
         top: 50px;
@@ -716,6 +1060,63 @@ a {
         width: 100%;
         background-color: rgb(0, 0, 0, 0.3);
     }
+    /*---==============================================-->
+    <!---================= CONTENIDO 4 ================-->
+    <!---==============================================--*/
+    .foot-content {
+        height: 750px;
+        width: 100%;
+        margin-top: 170px;
+        margin-bottom: 100px;
+    }
+    .boxs-contact {
+        position: relative;
+        height: 200px;
+        width: 100%;
+    }
+    .group-contact {
+        height: 180px;
+        width: 33.3%;
+        margin-top: 15px;
+        float: left;
+    }
+    .icon-contact {
+        width: 25%;
+        height: 150px;
+        float: left;
+        text-align: right;
+    }
+    .icon-contact-img {
+        position: relative;
+    }
+    .fa-map-marker-alt, .fa-phone-alt, .fa-envelope-open-text {
+        top: 59px;
+    }
+    .data-contact {
+        width: 75%;
+        height: 150px;
+        float: left;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    .title-contact {
+        font-size: 28px;
+        margin: 0px!important;
+        padding-top: 40px;
+        padding-bottom: 15px;
+    }
+    .text-contact {
+        width: 100%;
+        height: 50px;
+        font-size: 20px;
+    }
+    .info-contact {
+        width: 100%;
+        height: 400px;
+        margin-top: 100px;
+        background-color: gray;
+    }
+
 }
 
 /*=========================*/
