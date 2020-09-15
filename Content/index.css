@@ -166,7 +166,7 @@ a {
     <!---================= CONTENIDO 4 ================-->
     <!---==============================================--*/
     .foot-content {
-        height: 950px;
+        height: 1200px;
         width: 100%;
         margin-bottom: 100px;
     }
@@ -210,9 +210,77 @@ a {
     }
     .info-contact {
         width: 100%;
-        height: 400px;
+        height: 650px;
         margin-top: 50px;
-        background-color: gray;
+        background-image: url(./images/contact-us/contact-us.jpg);
+        background-size: cover;
+        background-position: center;
+        color: white;
+    }
+    #contact-img {
+        display: none;
+    }
+    .contact-databox {
+        background-color: rgba(0, 0, 0, 0.6);
+        height: 650px;
+        width: 100%;
+        text-align: center;
+    }
+    .contactus-title {
+        padding-top: 50px;
+        font-size: 30px;
+    }
+    .contactus-text {
+        padding-top: 10px;
+        font-size: 17px;
+    }
+    .contc-li {
+        margin-top: 20px;
+    }
+    .contc-span {
+        font-size: 14px;
+    }
+    .contc-input {
+        margin-top: 5px;
+        width: 255px;
+    }
+    .input-spc{
+        position: relative;
+        left: 5px;
+    }
+    ul {
+        list-style: none;
+    }
+    .contact-ul-list {
+        display: block;
+        padding-top: 5px;
+        padding-left: 0px;
+    }
+    .contact-li-list {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .contc-msj {
+        height: 90px;
+    }
+    #name-msj {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        float: left;
+    }
+    #box-msj {
+        width: 100%;
+        height: 70px;
+    }
+    #txtbox-msj {
+        height: 50px;
+        width: 250px;
+        position: relative;
+        top: 10px;
+    }
+    .contact-btnsubmit {
+        padding-top: 15px;
     }
 }
 @media (min-width: 391px) and (max-width: 575px){
@@ -308,7 +376,7 @@ a {
     <!---================= CONTENIDO 4 ================-->
     <!---==============================================--*/
     .foot-content {
-        height: 950px;
+        height: 1200px;
         width: 100%;
         margin-bottom: 100px;
     }
@@ -351,9 +419,77 @@ a {
     }
     .info-contact {
         width: 100%;
-        height: 400px;
+        height: 650px;
         margin-top: 50px;
-        background-color: gray;
+        background-image: url(./images/contact-us/contact-us.jpg);
+        background-size: cover;
+        background-position: center;
+        color: white;
+    }
+    #contact-img {
+        display: none;
+    }
+    .contact-databox {
+        background-color: rgba(0, 0, 0, 0.6);
+        height: 650px;
+        width: 100%;
+        text-align: center;
+    }
+    .contactus-title {
+        padding-top: 50px;
+        font-size: 30px;
+    }
+    .contactus-text {
+        padding-top: 10px;
+        font-size: 17px;
+    }
+    .contc-li {
+        margin-top: 20px;
+    }
+    .contc-span {
+        font-size: 14px;
+    }
+    .contc-input {
+        margin-top: 5px;
+        width: 255px;
+    }
+    .input-spc{
+        position: relative;
+        left: 5px;
+    }
+    ul {
+        list-style: none;
+    }
+    .contact-ul-list {
+        display: block;
+        padding-top: 5px;
+        padding-left: 0px;
+    }
+    .contact-li-list {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .contc-msj {
+        height: 90px;
+    }
+    #name-msj {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        float: left;
+    }
+    #box-msj {
+        width: 100%;
+        height: 70px;
+    }
+    #txtbox-msj {
+        height: 50px;
+        width: 250px;
+        position: relative;
+        top: 10px;
+    }
+    .contact-btnsubmit {
+        padding-top: 15px;
     }
     
 }
@@ -374,8 +510,6 @@ a {
         height: 500px;
         width: auto;
     }
-
-
     /*---==============================================-->
     <!---================= CONTENIDO 1 ================-->
     <!---==============================================--*/
@@ -496,9 +630,82 @@ a {
     }
     .info-contact {
         width: 100%;
-        height: 400px;
+        height: 500px;
         margin-top: 50px;
-        background-color: gray;
+        background-image: url(./images/contact-us/contact-us.jpg);
+        background-size: cover;
+        color: white;
+    }
+    #contact-img {
+        display: none;
+    }
+    .contact-databox {
+        background-color: rgba(0, 0, 0, 0.6);
+        height: 500px;
+        width: 100%;
+        text-align: center;
+    }
+    .contactus-title {
+        padding-top: 50px;
+        font-size: 30px;
+    }
+    .contactus-text {
+        padding-top: 10px;
+        font-size: 17px;
+    }
+    .contc-span {
+        padding-right: 30px;
+        font-size: 15px;
+    }
+    .contc-li {
+        margin-top: 20px;
+    }
+    .contc-input {
+        width: 250px;
+    }
+    .input-spc{
+        position: relative;
+        left: 5px;
+    }
+    ul {
+        list-style: none;
+    }
+    .contact-ul-list {
+        display: inline-flex;
+        padding-top: 15px;
+    }
+    .contact-li-list {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .contc-msj {
+        height: 70px;
+        position: relative;
+        top: 20px;
+    }
+    #name-msj {
+        width: 45%;
+        height: 70px;
+        text-align: right;
+        float: left;
+    }
+    .boxname-msj {
+        position: relative;
+        top: 20px;
+    }
+    #box-msj {
+        width: 55%;
+        height: 70px;
+        float: left;
+        text-align: left;
+    }
+    #txtbox-msj {
+        position: relative;
+        left: 5px;
+        width: 250px;
+    }
+    .contact-btnsubmit {
+        padding-top: 35px;
     }
 }
 @media (min-width: 768px) and (max-width: 991px){
@@ -652,9 +859,81 @@ a {
     }
     .info-contact {
         width: 100%;
-        height: 400px;
+        height: 500px;
         margin-top: 50px;
-        background-color: gray;
+        background-image: url(./images/contact-us/contact-us.jpg);
+        background-size: cover;
+        color: white;
+    }
+    #contact-img {
+        display: none;
+    }
+    .contact-databox {
+        background-color: rgba(0, 0, 0, 0.6);
+        height: 500px;
+        width: 100%;
+        text-align: center;
+    }
+    .contactus-title {
+        padding-top: 50px;
+        font-size: 35px;
+    }
+    .contactus-text {
+        padding-top: 10px;
+        font-size: 20px;
+    }
+    .contc-span {
+        padding-right: 30px;
+    }
+    .contc-li {
+        margin-top: 20px;
+    }
+    .contc-input {
+        width: 250px;
+    }
+    .input-spc{
+        position: relative;
+        left: 5px;
+    }
+    ul {
+        list-style: none;
+    }
+    .contact-ul-list {
+        display: inline-flex;
+        padding-top: 15px;
+    }
+    .contact-li-list {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .contc-msj {
+        height: 70px;
+        position: relative;
+        top: 20px;
+    }
+    #name-msj {
+        width: 45%;
+        height: 70px;
+        text-align: right;
+        float: left;
+    }
+    .boxname-msj {
+        position: relative;
+        top: 20px;
+    }
+    #box-msj {
+        width: 55%;
+        height: 70px;
+        float: left;
+        text-align: left;
+    }
+    #txtbox-msj {
+        position: relative;
+        left: 30px;
+        width: 250px;
+    }
+    .contact-btnsubmit {
+        padding-top: 35px;
     }
 }
 @media (min-width: 992px) and (max-width: 1199px){
@@ -807,9 +1086,81 @@ a {
     }
     .info-contact {
         width: 100%;
-        height: 400px;
+        height: 500px;
         margin-top: 50px;
-        background-color: gray;
+        background-image: url(./images/contact-us/contact-us.jpg);
+        background-size: cover;
+        color: white;
+    }
+    #contact-img {
+        display: none;
+    }
+    .contact-databox {
+        background-color: rgba(0, 0, 0, 0.6);
+        height: 500px;
+        width: 100%;
+        text-align: center;
+    }
+    .contactus-title {
+        padding-top: 50px;
+        font-size: 35px;
+    }
+    .contactus-text {
+        padding-top: 10px;
+        font-size: 20px;
+    }
+    .contc-span {
+        padding-right: 30px;
+    }
+    .contc-li {
+        margin-top: 20px;
+    }
+    .contc-input {
+        width: 250px;
+    }
+    .input-spc{
+        position: relative;
+        left: 5px;
+    }
+    ul {
+        list-style: none;
+    }
+    .contact-ul-list {
+        display: inline-flex;
+        padding-top: 15px;
+    }
+    .contact-li-list {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .contc-msj {
+        height: 70px;
+        position: relative;
+        top: 20px;
+    }
+    #name-msj {
+        width: 45%;
+        height: 70px;
+        text-align: right;
+        float: left;
+    }
+    .boxname-msj {
+        position: relative;
+        top: 20px;
+    }
+    #box-msj {
+        width: 55%;
+        height: 70px;
+        float: left;
+        text-align: left;
+    }
+    #txtbox-msj {
+        position: relative;
+        left: 30px;
+        width: 250px;
+    }
+    .contact-btnsubmit {
+        padding-top: 35px;
     }
 }
 @media (min-width: 1200px) and (max-width: 1599px){
@@ -958,9 +1309,110 @@ a {
     }
     .info-contact {
         width: 100%;
-        height: 400px;
-        margin-top: 50px;
-        background-color: gray;
+        height: auto;
+        margin-top: 100px;
+        text-align: center;
+        background-color: rgba(146, 100, 0, 0.6);
+    }
+    .contact-databox {
+        float: left;
+        width: 40%;
+        text-align: center;
+        color: white;
+    }
+    #contact-img {
+        width: 60%;
+        height: auto;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0px;
+    }
+    .contactus-title {
+        font-size: 25px;
+        margin: 0px;
+        padding-top: 30px;
+    }
+    .contactus-text {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 15px;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .contact-listdata {
+        width: 100%;
+        height: auto;
+        padding-top: 10px;
+    }
+    .contc-li {
+        height: 50px;
+        position: relative;
+    }
+    .contc-msj {
+        height: 70px;
+        margin-top: 10px;
+    }
+    #name-msj {
+        height: auto;
+        width: 40%;
+        float: left;
+        text-align: right;
+    }
+    .boxname-msj {
+        position: relative;
+        right: 25px;
+        top: 10px!important;
+    }
+    #box-msj {
+        height: auto;
+        width: 55%;
+        float: left;
+        text-align: left;
+    }
+    #txtbox-msj {
+        height: 50px;
+        width: 250px;
+    }
+    .contact-btnsubmit {
+        width: 100%;
+        height: auto;
+    }
+    .contact-ul-list {
+        display: inline-flex;
+    }
+    .contact-data-msg {
+        width: 350px;
+        height: 50px;
+        position: relative;
+    }
+    .names-email {
+        padding-top: 0px;
+    }
+    .contc-span {
+        padding: 5px;
+        position: relative;
+        top: 10px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .contc-input {
+        width: 250px;
+        position: relative;
+        left: 10px;
+        top: 10px;
+    }
+    .input-spc{
+        position: relative;
+        left: 15px;
+    }
+    .contact-li-list {
+        padding-left: 15px;
+        padding-right: 15px;
+        position: relative;
+        top: 10px;
     }
 }
 @media (min-width: 1600px) and (max-width: 1999px){
@@ -1064,7 +1516,7 @@ a {
     <!---================= CONTENIDO 4 ================-->
     <!---==============================================--*/
     .foot-content {
-        height: 750px;
+        height: 950px;
         width: 100%;
         margin-top: 170px;
         margin-bottom: 100px;
@@ -1112,11 +1564,111 @@ a {
     }
     .info-contact {
         width: 100%;
-        height: 400px;
+        height: auto;
         margin-top: 100px;
-        background-color: gray;
+        text-align: center;
+        background-color: rgba(146, 100, 0, 0.6);
+    }
+    .contact-databox {
+        float: left;
+        width: 50%;
+        text-align: center;
+        color: white;
+    }
+    #contact-img {
+        width: 50%;
+        height: auto;
     }
 
+    ul {
+        list-style: none;
+        padding: 0px;
+    }
+    .contactus-title {
+        font-size: 30px;
+        margin: 0px;
+        padding-top: 50px;
+    }
+    .contactus-text {
+        margin: 0px;
+        font-size: 18px;
+        padding-top: 20px;
+    }
+    .contact-listdata {
+        width: 80%;
+        height: auto;
+        float: left;
+    }
+    .contc-li {
+        height: 50px;
+        margin-top: 15px;
+        position: relative;
+    }
+    .contc-msj {
+        height: 100px;
+        margin-top: 10px;
+    }
+    #name-msj {
+        height: 100px;
+        width: 45%;
+        float: left;
+        text-align: right;
+    }
+    .boxname-msj {
+        position: relative;
+        right: 25px;
+        top: 10px!important;
+    }
+    #box-msj {
+        height: 100px;
+        width: 55%;
+        float: left;
+        text-align: left;
+    }
+    #txtbox-msj {
+        height: 90px;
+        width: 250px;
+    }
+    .contact-btnsubmit {
+        width: 20%;
+        height: auto;
+        float: left;
+        position: relative;
+        top: 100px;
+        text-align: left;
+    }
+    .contact-ul-list {
+        display: inline-flex;
+    }
+    .contact-data-msg {
+        width: 350px;
+        height: 50px;
+        position: relative;
+
+    }
+    .names-email {
+        padding-top: 0px;
+        
+    }
+    .contc-span {
+        padding: 5px;
+        font-size: 16px;
+        font-weight: bold;
+        position: relative;
+        top: 10px;
+    }
+    .contc-input {
+        width: 250px;
+        position: relative;
+        left: 10px;
+        top: 10px;
+    }
+    .contact-li-list {
+        padding-left: 30px;
+        padding-right: 30px;
+        position: relative;
+        top: 10px;
+    }
 }
 
 /*=========================*/
@@ -1125,7 +1677,6 @@ a {
 /*======================= FOOTER =========================*/
 /*========================================================*/
 #FootMenu {
-    border-top: 2px black solid;
     position: relative;
     bottom: 0%;
     height: 70px;
@@ -1138,7 +1689,7 @@ a {
     margin-left: 0.3%;
     padding-top: 25px;
     font-size: 15px;
-    background-color: palegreen;
+    background-color: rgb(211, 211, 211);
 }
 #foot_1 {
     text-align: left;
