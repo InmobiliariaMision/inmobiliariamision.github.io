@@ -13,7 +13,11 @@ body {
     width: 200px;
 }
 .navbar {
-    background-color: rgba(0, 0, 0, 0.7);
+    background: linear-gradient(to left, rgb(75, 75, 75), rgb(29, 29, 29));
+    position: absolute;
+    width: 100%;
+    top: 0%;
+    z-index: 10;
 }
 .navbar-brand {
     margin-left: 50px!important;
@@ -30,6 +34,27 @@ body {
     padding-left: 35px!important;
     padding-right: 35px!important;
     color: white!important;
+    position: relative;
+    text-decoration: none;
+    font-size: 17px;
+}
+.nav-link:hover {
+    color: rgb(201, 201, 201)!important;
+    background: linear-gradient(to left, rgb(65, 65, 65, 0.3), rgba(38, 38, 38, 0.3));
+}
+.nav-link:hover:after {
+    right: 0;
+}
+.nav-link::after {
+    border-top: 2px solid rgb(55, 55, 55);
+    border-bottom: 2px solid rgb(55, 55, 55);
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: -2px;
+    bottom: -2px;
+    left: 0;
+    transition: right .6s cubic-bezier(1.0, 0.7, 0.3, 0.0)!important;
 }
 @media (min-width: 100px) and (max-width: 390px){
     .navbar-brand {
@@ -71,28 +96,56 @@ a {
     background-position: center;
     background-size: cover;
 }
+.boxcont > a { 
+    text-decoration: none;
+}
 .spanColor {
     color: white;
     position: relative;
     top: 97px;
 }
+
+#carouselIntro {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.carousel-btns {
+    width: 8%!important;
+}
+.carousel-btns:hover {
+    background-color: rgba(0, 0, 0, 0.030);
+}
+.carousel-control {
+    width: 30px!important;
+    height: 30px!important;
+    position: relative;
+    top: 50px!important;
+}
+.owl-slide {
+    position: relative;
+    height: 100vh;
+}
+.cover {
+    margin: 0%;
+    padding: 0%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: auto;
+    left: 50%;
+    transform: translate(-50%);
+}
+
 @media (min-width: 100px) and (max-width: 390px){
     /*---==============================================-->
     <!---=========== FLUJO DE PRESENTACION ============-->
     <!---==============================================--*/
-    #carouselIntro {
-        width: 100%;
-        height: 500px;
+    .cover {
+        background-position: left;
     }
-    .carousel-item {
-        text-align: center;
-        height: 500px;
-        width: 100%;
-    }
-    #intro_img1 {
-        height: 500px;
-        width: auto;
-    }
+
+
     /*---==============================================-->
     <!---================= CONTENIDO 1 ================-->
     <!---==============================================--*/
@@ -104,7 +157,7 @@ a {
         height: 1300px;
         width: 100%;
         margin-bottom: 100px;
-        background-color: rgba(0, 0, 0, 0.7);
+        background: linear-gradient(to left, rgb(75, 75, 75), rgb(29, 29, 29));
     }
     #box_cont_text {
         width: 100%;
@@ -210,7 +263,7 @@ a {
     }
     .info-contact {
         width: 100%;
-        height: 650px;
+        height: 700px;
         margin-top: 50px;
         background-image: url(./images/contact-us/contact-us.jpg);
         background-size: cover;
@@ -222,7 +275,7 @@ a {
     }
     .contact-databox {
         background-color: rgba(0, 0, 0, 0.6);
-        height: 650px;
+        height: 700px;
         width: 100%;
         text-align: center;
     }
@@ -243,6 +296,18 @@ a {
     .contc-input {
         margin-top: 5px;
         width: 255px;
+        background-color: transparent;
+        border-left: rgba(255, 255, 255, 0.707) 2px solid;
+        border-bottom: rgba(255, 255, 255, 0.707) 2px solid;
+        border-top: none;
+        border-right: none;
+        color: white;
+        padding-left: 8px;
+    }
+    .contc-input:focus {
+        outline: none;
+        border-left: rgb(255, 166, 0, 0.5) solid;
+        border-bottom: rgb(255, 166, 0, 0.5) solid;
     }
     .input-spc{
         position: relative;
@@ -274,32 +339,50 @@ a {
         height: 70px;
     }
     #txtbox-msj {
-        height: 50px;
-        width: 250px;
+        height: 100px;
+        width: 270px;
+        padding-left: 5px;
         position: relative;
         top: 10px;
+        background-color: transparent;
+        color: white;
+        border-left: rgba(255, 255, 255, 0.713) 2px solid;
+        border-bottom: rgba(255, 255, 255, 0.713) 2px solid;
+        border-top: 1px solid rgba(128, 128, 128, 0.35);
+        border-right: 1px solid rgba(128, 128, 128, 0.398);
+    }
+    #txtbox-msj:focus {
+        outline: none;
+        border-bottom: orange solid;
+        border-left: orange solid;
     }
     .contact-btnsubmit {
-        padding-top: 15px;
+        position: relative;
+        top: 70px;
+    }
+    .btnsubmit {
+        padding: 5px;
+        width: 100px;
+        background: linear-gradient(to left, rgb(50, 50, 50), rgb(75, 75, 75));
+        border-radius: 20px;
+        color: white;
+        border: 2px solid gray;
+    }
+    .btnsubmit:hover {
+        background: linear-gradient(to left, rgb(43, 43, 43), rgb(97, 97, 97));
+    }
+    .btnsubmit:focus {
+        outline: none;
     }
 }
 @media (min-width: 391px) and (max-width: 575px){
     /*---==============================================-->
     <!---=========== FLUJO DE PRESENTACION ============-->
     <!---==============================================--*/
-    #carouselIntro {
-        width: 100%;
-        height: 500px;
+    .cover {
+        background-position: left;
     }
-    .carousel-item {
-        text-align: center;
-        height: 500px;
-        width: 100%;
-    }
-    #intro_img1 {
-        height: 500px;
-        width: auto;
-    }
+
 
     /*---==============================================-->
     <!---================= CONTENIDO 1 ================-->
@@ -312,7 +395,7 @@ a {
         height: 1300px;
         width: 100%;
         margin-bottom: 15%;
-        background-color: rgba(0, 0, 0, 0.7);
+        background: linear-gradient(to left, rgb(75, 75, 75), rgb(29, 29, 29));
     }
     #box_cont_text {
         width: 100%;
@@ -419,7 +502,7 @@ a {
     }
     .info-contact {
         width: 100%;
-        height: 650px;
+        height: 700px;
         margin-top: 50px;
         background-image: url(./images/contact-us/contact-us.jpg);
         background-size: cover;
@@ -431,7 +514,7 @@ a {
     }
     .contact-databox {
         background-color: rgba(0, 0, 0, 0.6);
-        height: 650px;
+        height: 700px;
         width: 100%;
         text-align: center;
     }
@@ -452,6 +535,18 @@ a {
     .contc-input {
         margin-top: 5px;
         width: 255px;
+        background-color: transparent;
+        border-left: rgba(255, 255, 255, 0.707) 2px solid;
+        border-bottom: rgba(255, 255, 255, 0.707) 2px solid;
+        border-top: none;
+        border-right: none;
+        color: white;
+        padding-left: 10px;
+    }
+    .contc-input:focus {
+        outline: none;
+        border-left: rgb(255, 166, 0, 0.5) solid;
+        border-bottom: rgb(255, 166, 0, 0.5) solid;
     }
     .input-spc{
         position: relative;
@@ -483,33 +578,48 @@ a {
         height: 70px;
     }
     #txtbox-msj {
-        height: 50px;
-        width: 250px;
+        height: 100px;
+        width: 270px;
+        padding-left: 5px;
         position: relative;
         top: 10px;
+        background-color: transparent;
+        color: white;
+        border-left: rgba(255, 255, 255, 0.713) 2px solid;
+        border-bottom: rgba(255, 255, 255, 0.713) 2px solid;
+        border-top: 1px solid rgba(128, 128, 128, 0.35);
+        border-right: 1px solid rgba(128, 128, 128, 0.398);
+    }
+    #txtbox-msj:focus {
+        outline: none;
+        border-bottom: orange solid;
+        border-left: orange solid;
     }
     .contact-btnsubmit {
-        padding-top: 15px;
+        position: relative;
+        top: 70px;
     }
-    
+    .btnsubmit {
+        padding: 5px;
+        width: 100px;
+        background: linear-gradient(to left, rgb(50, 50, 50), rgb(75, 75, 75));
+        border-radius: 20px;
+        color: white;
+        border: 2px solid gray;
+    }
+    .btnsubmit:hover {
+        background: linear-gradient(to left, rgb(43, 43, 43), rgb(97, 97, 97));
+    }
+    .btnsubmit:focus {
+        outline: none;
+    }
 }
 @media (min-width: 576px) and (max-width: 767px){
     /*---==============================================-->
     <!---=========== FLUJO DE PRESENTACION ============-->
     <!---==============================================--*/
-    #carouselIntro {
-        width: 100%;
-        height: auto;
-    }
-    .carousel-item {
-        text-align: center;
-        height: auto;
-        width: 100%;
-    }
-    #intro_img1 {
-        height: 500px;
-        width: auto;
-    }
+
+
     /*---==============================================-->
     <!---================= CONTENIDO 1 ================-->
     <!---==============================================--*/
@@ -521,7 +631,7 @@ a {
         height: 1350px;
         width: 100%;
         margin-bottom: 10%;
-        background-color: rgba(0, 0, 0, 0.7);
+        background: linear-gradient(to left, rgb(75, 75, 75), rgb(29, 29, 29));
     }
     #box_cont_text {
         width: 100%;
@@ -586,7 +696,7 @@ a {
     <!---================= CONTENIDO 4 ================-->
     <!---==============================================--*/
     .foot-content {
-        height: 1050px;
+        height: 1150px;
         width: 100%;
         margin-top: 100px;
         margin-bottom: 100px;
@@ -630,7 +740,7 @@ a {
     }
     .info-contact {
         width: 100%;
-        height: 500px;
+        height: 600px;
         margin-top: 50px;
         background-image: url(./images/contact-us/contact-us.jpg);
         background-size: cover;
@@ -641,7 +751,7 @@ a {
     }
     .contact-databox {
         background-color: rgba(0, 0, 0, 0.6);
-        height: 500px;
+        height: 600px;
         width: 100%;
         text-align: center;
     }
@@ -662,6 +772,18 @@ a {
     }
     .contc-input {
         width: 250px;
+        background-color: transparent;
+        border-left: rgba(255, 255, 255, 0.707) 2px solid;
+        border-bottom: rgba(255, 255, 255, 0.707) 2px solid;
+        border-top: none;
+        border-right: none;
+        color: white;
+        padding-left: 8px;
+    }
+    .contc-input:focus {
+        outline: none;
+        border-left: rgb(255, 166, 0, 0.5) solid;
+        border-bottom: rgb(255, 166, 0, 0.5) solid;
     }
     .input-spc{
         position: relative;
@@ -693,42 +815,49 @@ a {
         position: relative;
         top: 20px;
     }
-    #box-msj {
-        width: 55%;
-        height: 70px;
-        float: left;
-        text-align: left;
-    }
     #txtbox-msj {
+        height: 100px;
+        width: 270px;
+        padding-left: 5px;
         position: relative;
-        left: 5px;
-        width: 250px;
+        top: 10px;
+        background-color: transparent;
+        color: white;
+        border-left: rgba(255, 255, 255, 0.713) 2px solid;
+        border-bottom: rgba(255, 255, 255, 0.713) 2px solid;
+        border-top: 1px solid rgba(128, 128, 128, 0.35);
+        border-right: 1px solid rgba(128, 128, 128, 0.398);
+    }
+    #txtbox-msj:focus {
+        outline: none;
+        border-bottom: orange solid;
+        border-left: orange solid;
     }
     .contact-btnsubmit {
-        padding-top: 35px;
+        position: relative;
+        top: 130px;
+    }
+    .btnsubmit {
+        padding: 5px;
+        width: 100px;
+        background: linear-gradient(to left, rgb(50, 50, 50), rgb(75, 75, 75));
+        border-radius: 20px;
+        color: white;
+        border: 2px solid gray;
+    }
+    .btnsubmit:hover {
+        background: linear-gradient(to left, rgb(43, 43, 43), rgb(97, 97, 97));
+    }
+    .btnsubmit:focus {
+        outline: none;
     }
 }
 @media (min-width: 768px) and (max-width: 991px){
     /*---==============================================-->
     <!---=========== FLUJO DE PRESENTACION ============-->
     <!---==============================================--*/
-    #carouselIntro {
-        width: 100%;
-        height: auto;
-    }
-    .carousel-item {
-        text-align: center;
-        height: auto;
-        width: 100%;
-    }
-    .img-boxcarousel {
-        height: auto;
-        width: 100%;
-    }
-    .intro_img {
-        height: auto;
-        width: auto;
-    }
+
+
     /*---==============================================-->
     <!---================= CONTENIDO 1 ================-->
     <!---==============================================--*/
@@ -741,7 +870,7 @@ a {
         height: 800px;
         width: 100%;
         margin-bottom: 10%;
-        background-color: rgba(0, 0, 0, 0.7);
+        background: linear-gradient(to left, rgb(75, 75, 75), rgb(29, 29, 29));
     }
     #box_cont_text {
         width: 100%;
@@ -859,7 +988,7 @@ a {
     }
     .info-contact {
         width: 100%;
-        height: 500px;
+        height: 600px;
         margin-top: 50px;
         background-image: url(./images/contact-us/contact-us.jpg);
         background-size: cover;
@@ -870,7 +999,7 @@ a {
     }
     .contact-databox {
         background-color: rgba(0, 0, 0, 0.6);
-        height: 500px;
+        height: 600px;
         width: 100%;
         text-align: center;
     }
@@ -890,6 +1019,18 @@ a {
     }
     .contc-input {
         width: 250px;
+        background-color: transparent;
+        border-left: rgba(255, 255, 255, 0.707) 2px solid;
+        border-bottom: rgba(255, 255, 255, 0.707) 2px solid;
+        border-top: none;
+        border-right: none;
+        color: white;
+        padding-left: 8px;
+    }
+    .contc-input:focus {
+        outline: none;
+        border-left: rgb(255, 166, 0, 0.5) solid;
+        border-bottom: rgb(255, 166, 0, 0.5) solid;
     }
     .input-spc{
         position: relative;
@@ -928,35 +1069,48 @@ a {
         text-align: left;
     }
     #txtbox-msj {
+        height: 100px;
+        width: 270px;
+        padding-left: 5px;
         position: relative;
-        left: 30px;
-        width: 250px;
+        top: 10px;
+        background-color: transparent;
+        color: white;
+        border-left: rgba(255, 255, 255, 0.713) 2px solid;
+        border-bottom: rgba(255, 255, 255, 0.713) 2px solid;
+        border-top: 1px solid rgba(128, 128, 128, 0.35);
+        border-right: 1px solid rgba(128, 128, 128, 0.398);
+    }
+    #txtbox-msj:focus {
+        outline: none;
+        border-bottom: orange solid;
+        border-left: orange solid;
     }
     .contact-btnsubmit {
-        padding-top: 35px;
+        position: relative;
+        top: 130px;
+    }
+    .btnsubmit {
+        padding: 5px;
+        width: 100px;
+        background: linear-gradient(to left, rgb(50, 50, 50), rgb(75, 75, 75));
+        border-radius: 20px;
+        color: white;
+        border: 2px solid gray;
+    }
+    .btnsubmit:hover {
+        background: linear-gradient(to left, rgb(43, 43, 43), rgb(97, 97, 97));
+    }
+    .btnsubmit:focus {
+        outline: none;
     }
 }
 @media (min-width: 992px) and (max-width: 1199px){
     /*---==============================================-->
     <!---=========== FLUJO DE PRESENTACION ============-->
     <!---==============================================--*/
-    #carouselIntro {
-        width: 100%;
-        height: auto;
-    }
-    .carousel-item {
-        text-align: center;
-        height: auto;
-        width: 100%;
-    }
-    .img-boxcarousel {
-        height: auto;
-        width: 100%;
-    }
-    #intro_img1 {
-        height: auto;
-        width: 100%;
-    }
+
+
     /*---==============================================-->
     <!---================= CONTENIDO 1 ================-->
     <!---==============================================--*/
@@ -968,7 +1122,7 @@ a {
         height: 500px;
         width: 100%;
         margin-bottom: 10%;
-        background-color: rgba(0, 0, 0, 0.7);
+        background: linear-gradient(to left, rgb(75, 75, 75), rgb(29, 29, 29));
     }
     #box_cont_text {
         width: 40%;
@@ -1086,7 +1240,7 @@ a {
     }
     .info-contact {
         width: 100%;
-        height: 500px;
+        height: 600px;
         margin-top: 50px;
         background-image: url(./images/contact-us/contact-us.jpg);
         background-size: cover;
@@ -1097,7 +1251,7 @@ a {
     }
     .contact-databox {
         background-color: rgba(0, 0, 0, 0.6);
-        height: 500px;
+        height: 600px;
         width: 100%;
         text-align: center;
     }
@@ -1117,6 +1271,18 @@ a {
     }
     .contc-input {
         width: 250px;
+        background-color: transparent;
+        border-left: rgba(255, 255, 255, 0.707) 2px solid;
+        border-bottom: rgba(255, 255, 255, 0.707) 2px solid;
+        border-top: none;
+        border-right: none;
+        color: white;
+        padding-left: 8px;
+    }
+    .contc-input:focus {
+        outline: none;
+        border-left: rgb(255, 166, 0, 0.5) solid;
+        border-bottom: rgb(255, 166, 0, 0.5) solid;
     }
     .input-spc{
         position: relative;
@@ -1148,45 +1314,51 @@ a {
         position: relative;
         top: 20px;
     }
-    #box-msj {
-        width: 55%;
-        height: 70px;
-        float: left;
-        text-align: left;
-    }
     #txtbox-msj {
+        height: 100px;
+        width: 270px;
+        padding-left: 5px;
         position: relative;
-        left: 30px;
-        width: 250px;
+        top: 10px;
+        left: -110px;
+        background-color: transparent;
+        color: white;
+        border-left: rgba(255, 255, 255, 0.713) 2px solid;
+        border-bottom: rgba(255, 255, 255, 0.713) 2px solid;
+        border-top: 1px solid rgba(128, 128, 128, 0.35);
+        border-right: 1px solid rgba(128, 128, 128, 0.398);
+    }
+    #txtbox-msj:focus {
+        outline: none;
+        border-bottom: orange solid;
+        border-left: orange solid;
     }
     .contact-btnsubmit {
-        padding-top: 35px;
+        position: relative;
+        top: 130px;
+    }
+    .btnsubmit {
+        padding: 5px;
+        width: 100px;
+        background: linear-gradient(to left, rgb(50, 50, 50), rgb(75, 75, 75));
+        border-radius: 20px;
+        color: white;
+        border: 2px solid gray;
+    }
+    .btnsubmit:hover {
+        background: linear-gradient(to left, rgb(43, 43, 43), rgb(97, 97, 97));
+    }
+    .btnsubmit:focus {
+        outline: none;
     }
 }
 @media (min-width: 1200px) and (max-width: 1599px){
     /*---==============================================-->
     <!---=========== FLUJO DE PRESENTACION ============-->
     <!---==============================================--*/
-    #carouselIntro {
-        width: 100%;
-        height: auto;
-    }
-    .img-boxcarousel {
-        height: auto;
-        width: 100%;
-    }
-    .carousel-control-prev, .carousel-control-next {
-        width: 150px;
-    }
-    .carousel-item {
-        text-align: center;
-        height: auto;
-        width: 100%;
-    }
-    #intro_img1 {
-        height: auto;
-        width: 100%;
-    }
+
+
+
     /*---==============================================-->
     <!---================= CONTENIDO 1 ================-->
     <!---==============================================--*/
@@ -1198,7 +1370,8 @@ a {
         height: 500px;
         width: 100%;
         margin-bottom: 5%;
-        background-color: rgba(0, 0, 0, 0.7);
+        background: linear-gradient(to left, rgb(75, 75, 75), rgb(29, 29, 29));
+
     }
     #box_cont_text {
         width: 40%;
@@ -1270,6 +1443,7 @@ a {
         position: relative;
         height: 200px;
         width: 100%;
+        top: 20px;
     }
     .group-contact {
         height: 180px;
@@ -1419,29 +1593,9 @@ a {
     /*---==============================================-->
     <!---=========== FLUJO DE PRESENTACION ============-->
     <!---==============================================--*/
-    .nav-link {
-        font-size: 20px;
-    }
-    #carouselIntro {
-        width: 100%;
-        height: auto;
-    }
-    .img-boxcarousel {
-        height: auto;
-        width: 100%;
-    }
-    .carousel-control-prev, .carousel-control-next {
-        width: 150px;
-    }
-    .carousel-item {
-        text-align: center;
-        height: auto;
-        width: 100%;
-    }
-    #intro_img1 {
-        height: auto;
-        width: 100%;
-    }
+
+
+
     /*---==============================================-->
     <!---================= CONTENIDO 1 ================-->
     <!---==============================================--*/
@@ -1453,7 +1607,7 @@ a {
         height: 500px;
         width: 100%;
         margin-bottom: 5%;
-        background-color: rgba(0, 0, 0, 0.7);
+        background: linear-gradient(to left, rgb(75, 75, 75), rgb(29, 29, 29));
     }
     #box_cont_text {
         width: 40%;
@@ -1525,6 +1679,7 @@ a {
         position: relative;
         height: 200px;
         width: 100%;
+        bottom: 20px;
     }
     .group-contact {
         height: 180px;
@@ -1681,33 +1836,25 @@ a {
     bottom: 0%;
     height: 70px;
     width: 100%;
+    background: linear-gradient(to left, rgb(75, 75, 75), rgb(29, 29, 29));
 }
 .foot_link {
-    width: 33%;
+    width: 100%;
     height: 70px;
     float: left;
-    margin-left: 0.3%;
+    color: white;
     padding-top: 25px;
     font-size: 15px;
-    background-color: rgb(211, 211, 211);
 }
 #foot_1 {
-    text-align: left;
-    padding-left: 30px;
+    display: none;
 }
 #foot_2 {
+    padding-top: 15px;
     text-align: center;
 }
 #foot_3 {
-    text-align: right;
-    padding-right: 30px;
-}
-#FootLine {
-    position: relative;
-    bottom: 0%;
-    width: 100%;
-    height: 15px;
-    background-color: rgb(110, 110, 110);
+    display: none;
 }
 
 @media (min-width: 100px) and (max-width: 390px){
